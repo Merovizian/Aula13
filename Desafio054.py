@@ -15,7 +15,7 @@ for c in range(0, quant):
     ## Verifica se a pessoa ja nasceu e se a data é possivel
     if dia > 31 or mes > 12 or (ano > datetime.now().year or (ano == datetime.now().year and mes > datetime.now().month) or (ano == datetime.now().year and mes == datetime.now().month and dia > datetime.now().day)):
         print("\033[1;31mInforme uma data correta!")
-    ## Verifica se o mês tem a quantidade de dias certo
+    ## Verifica se o mês tem a limite_cadastro de dias certo
     if dia > (calendar.monthrange(ano,mes)[1]):
         print(f"O Mês {mes} do ano {ano} não tem {dia} dias e sim {calendar.monthrange(ano,mes)[1]} dias\n\033[1;31mInforme uma data correta!")
 
@@ -31,6 +31,8 @@ for c in range(0, quant):
         idade_ano = idade_ano - 1
         idade_mes = 12 + idade_mes
     print(f"Você tem {idade_ano} anos, {idade_mes} meses e {idade_dia} dias de vida")
+
+
     if idade_ano >= 21:
         maioridade += 1
     else:

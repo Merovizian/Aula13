@@ -51,8 +51,8 @@ print(f"A média de idade do grupo é: {media/quantidade}")
 if homem_velho != 0:
     print(f"O homem mais velho é o usuário {homem_velho_aux} com {homem_velho} anos")
 else:
-    print("\033[1;33mNão há homens no grupo!\033[m")
+    print("\033[1;33mNão há lista_homens no grupo!\033[m")
 if mulher_aux == 1 and mulher_menos20 != 0:
     print(f"No grupo existem {mulher_menos20} Mulher(es) com menos de 20 anos.")
 else:
-    print("\033[1;33mNão há mulheres com menos de 20 anos no grupo!")
+    print("\033[1;33mNão há lista_mulheres com menos de 20 anos no grupo!")
